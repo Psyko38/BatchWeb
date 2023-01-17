@@ -85,6 +85,6 @@ powershell -c "Invoke-WebRequest -Uri 'https://github.com/Psyko38/BatchWeb/archi
 start BatchWeb%rand%.zip
 cls
 echo Unzip e file !
-pasue
+pause
 del %name%
 exit
