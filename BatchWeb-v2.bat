@@ -81,7 +81,10 @@ goto Dweb
 cls
 set rand=%random%
 echo Updating...
-powershell -c "Invoke-WebRequest -Uri 'La page web' -OutFile '%md%\BatchWeb%rand%.bat'"
-start BatchWeb%rand%.bat
+powershell -c "Invoke-WebRequest -Uri 'https://github.com/Psyko38/BatchWeb/archive/refs/heads/main.zip' -OutFile '%md%\BatchWeb%rand%.zip'"
+start BatchWeb%rand%.zip
+cls
+echo Unzip e file !
+pasue
 del %name%
 exit
